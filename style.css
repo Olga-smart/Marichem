@@ -1,7 +1,6 @@
 /* General */
 :root {
   --primary: #01203d;
-  --primary-dark: #000d19;
   --accent: #42b758;
   --accent-light: #e2f1ce;
 }
@@ -183,7 +182,7 @@ body {
 
 /* Products Section */
 .products-section {
-/*  background-image: url(img/wave.svg);*/
+  background-image: url(img/wave.svg);
 }
 .products-section__item {
   text-align: center;
@@ -211,3 +210,23 @@ body {
   align-self: center;
 } 
 /* End Products Section */
+
+/* Benefits Section */
+.benefits-section__item {
+  padding-top: 60px;
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+.benefits-section__item-1 {
+  background-image: url(img/global.svg);
+}
+.benefits-section__item-2 {
+  background-image: url(img/chronometer.svg);
+}
+.benefits-section__item-3 {
+  background-image: url(img/inspection.svg);
+}
+.benefits-section__item h3 {
+  font-size: 1.3rem;
+}
+/* End Benefits Section */
