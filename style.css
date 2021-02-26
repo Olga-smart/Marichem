@@ -1,13 +1,14 @@
 /* General */
 :root {
   --primary: #01203d;
+  --primary-dark: #011c35;
   --accent: #42b758;
   --accent-light: #e2f1ce;
 }
 body {
   font-family: 'Montserrat', sans-serif;
 }
-.page-section, .footer {
+.page-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
@@ -230,3 +231,42 @@ body {
   font-size: 1.3rem;
 }
 /* End Benefits Section */
+
+/* Contacts Section */
+.contacts-section {
+  background-color: var(--primary);
+  background-image: url(img/wave-contacts.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+.contacts-section__item {
+  text-align: center;
+  padding-top: 50px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: top center;
+  min-height: 50px;
+}
+.contacts-section__address {
+  background-image: url(img/pin.svg);
+}
+.contacts-section__tel {
+  background-image: url(img/telephone.svg);
+}
+.contacts-section__mail {
+  background-image: url(img/envelope.svg);
+}
+.contacts-section__item h3 {
+  font-size: 1rem;
+}
+/* End Contacts Section */
+
+/* Footer */
+.footer {
+  background-color: var(--primary-dark);
+/*  background-image: url(img/wave-footer.svg);*/
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+/* End Footer */
