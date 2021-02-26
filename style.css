@@ -1,11 +1,75 @@
 /* General */
 :root {
   --primary: #01203d;
+  --primary-dark: #000d19;
   --accent: #42b758;
+  --accent-light: #e2f1ce;
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  height: 5000px;
+}
+.page-section, .footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.dark-section {
+  background-color: var(--primary);
+  color: #fff;
+}
+.dark-section .section-heading {
+  color: #fff;
+}
+.grey-section {
+  background-color: rgba(0,0,0,0.1);
+}
+.section-heading {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 3rem;
+}
+.btn-link {
+  color: var(--accent);
+  position: relative;
+  text-decoration: none;
+}
+.btn-link:hover,
+.btn-link:active {
+  color: var(--accent);
+}
+.btn-link::before,
+.btn-link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.btn-link::before {
+  width: 20px;
+  height: 2px;
+  left: calc(100% + 10px);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: var(--accent);
+}
+.btn-link::after {
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid var(--accent);
+  border-right: 2px solid var(--accent);
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: -30px;
+  top: 50%;
+}
+.btn-link:hover::before {
+  left: calc(100% + 15px);
+}
+.btn-link:hover::after {
+  right: -35px;
 }
 /* End General */
 
@@ -116,3 +180,34 @@ body {
   top: 50%;
 }
 /* End Main Screen */
+
+/* Products Section */
+.products-section {
+/*  background-image: url(img/wave.svg);*/
+}
+.products-section__item {
+  text-align: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.products-section__item h3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.products-section__item p {
+  text-align: left;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.products-section__item-link {
+  -ms-flex-item-align: center;
+  align-self: center;
+} 
+/* End Products Section */
