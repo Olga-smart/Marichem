@@ -310,7 +310,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 70%;
+  min-height: 70%;
 }
 .product-card__param {
   display: -webkit-box;
@@ -322,6 +322,9 @@ body {
   flex-direction: column;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.product-card__param:not(:last-child) {
+  margin-bottom: 3rem;
 }
 .product-card__param dd {
   -webkit-box-ordinal-group: 2;
@@ -357,23 +360,117 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+.product-card__icon-btn img {
+  width: 60%;
+  -webkit-animation-duration: inherit;  
+  animation-duration: inherit;
+  -webkit-animation-timing-function: inherit;
+  animation-timing-function: inherit;
+  -webkit-animation-delay: inherit;
+  animation-delay: inherit;
+  -webkit-animation-fill-mode: inherit;
+  animation-fill-mode: inherit;
+  pointer-events: none;
+}
 .product-card__video-btn {
-  background-image: url(img/play-button-arrowhead.svg);
+/*  background-image: url(img/play-button-arrowhead.svg);*/
+/*
   top: 85px;
   right: 25px;
+*/
+  top: -20px;
   width: 40px;
   height: 40px;
+  -webkit-animation-name: video-btn-spin;
+  animation-name: video-btn-spin;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-transform-origin: 50% 270px;
+  transform-origin: 50% 270px;
+}
+.product-card__video-btn img {
+  -webkit-animation-name: video-btn-spin-reverse;
+  animation-name: video-btn-spin-reverse;
 }
 .product-card__docs-btn {
   width: 30px;
   height: 30px;
-  background-image: url(img/info.svg);
+/*  background-image: url(img/info.svg);*/
+/*
   left: 57px;
   bottom: 57px;
+*/
+  top: -15px;
+  -webkit-animation: docs-btn-spin 1s ease-in-out;
+  animation: docs-btn-spin 1s ease-in-out;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-transform-origin: 50% 265px;
+  transform-origin: 50% 265px;
+}
+.product-card__docs-btn img {
+  -webkit-animation-name: docs-btn-spin-reverse;
+  animation-name: docs-btn-spin-reverse;
 }
 .product-card__dl-usual {
   font-size: 0.8rem;
   text-align: center;
+}
+@-webkit-keyframes video-btn-spin {
+  to { 
+    -webkit-transform: rotate(0.16turn); 
+    transform: rotate(0.16turn); 
+  }
+}
+@keyframes video-btn-spin {
+  to { 
+    -webkit-transform: rotate(0.16turn); 
+    transform: rotate(0.16turn); 
+  }
+}
+@-webkit-keyframes video-btn-spin-reverse {
+  to { 
+    -webkit-transform: rotate(-0.16turn); 
+    transform: rotate(-0.16turn); 
+  }
+}
+@keyframes video-btn-spin-reverse {
+  to { 
+    -webkit-transform: rotate(-0.16turn); 
+    transform: rotate(-0.16turn); 
+  }
+}
+@-webkit-keyframes docs-btn-spin {
+  to {
+    -webkit-transform: rotate(-0.37turn);
+    transform: rotate(-0.37turn);
+  }
+}
+@keyframes docs-btn-spin {
+  to {
+    -webkit-transform: rotate(-0.37turn);
+    transform: rotate(-0.37turn);
+  }
+}
+@-webkit-keyframes docs-btn-spin-reverse {
+  to {
+    -webkit-transform: rotate(0.37turn);
+    transform: rotate(0.37turn);
+  }
+}
+@keyframes docs-btn-spin-reverse {
+  to {
+    -webkit-transform: rotate(0.37turn);
+    transform: rotate(0.37turn);
+  }
 }
 /* End Product Card */
 
