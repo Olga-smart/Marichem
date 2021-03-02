@@ -24,33 +24,38 @@
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
-              <img src="img/logo.png" alt="logo">
+              <img class="img-fluid" src="img/logo.png" alt="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler navbar__burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="visually-hidden">Menu</span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-              <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
+              <ul class="navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link" href="#">Products</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Worldwide coverage</a>
+                  <a class="nav-link" href="#">Benefits</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacts</a>
                 </li>
               </ul>
             </div>
-            <form class="d-flex">
-              <input class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-search" type="submit">
+            <div class="search">
+              <button class="btn search__btn search__btn_toggle">
                 <span class="visually-hidden">Search</span>
               </button>
-            </form>
+              <form action="#" class="d-flex align-items-center">
+                <input class="form-control me-2 search__input" type="search">		
+                <button class="btn search__btn search__btn_search" type="submit">
+                  <span class="visually-hidden">Search</span>
+                </button>
+              </form>
+            </div>
           </div>
         </nav>
         <div class="main-screen__intro">
@@ -98,28 +103,34 @@
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="products-section__item">
-              <img class="img-fluid w-75 img-th" src="img/cleaning-systems.png">
-              <h3 class="text-center">Cleaning Systems</h3>
+              <img class="img-fluid" src="img/cleaning-systems.png">
+              <h3>Cleaning Systems</h3>
               <p>Discover the famous Marichem Cargo Hold Cleaning Systems, such as MCM 200, M.H.C.S. 200, High Pressure Machines, Water Jet Gun and much more.</p>
-              <a href="#" class="btn-link products-section__item-link">Read more</a>
+              <div class="products-section__item-link">
+                <a href="#" class="btn-link products-section__item-link">Read more</a>
+              </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="products-section__item">
-              <img class="img-fluid w-75" src="img/cleaning-products.png">
+              <img class="img-fluid" src="img/cleaning-products.png">
               <h3>Cleaning Products</h3>
               <p>Discover also Marichem Cargo Hold Cleaning Products, such as Alcaclean H.D., Bauxite Remover, Marichem and much more.</p>
-              <a href="#" class="btn-link products-section__item-link">Read more</a>
+              <div class="products-section__item-link">
+                <a href="#" class="btn-link">Read more</a>
+              </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="products-section__item">
-              <img class="img-fluid w-75" src="img/protective-coating.png">
+              <img class="img-fluid" src="img/protective-coating.png">
               <h3>Protective Coating</h3>
               <p>Discover Marichem Protective Coating, Preload 300 and Protective Equipments.</p>
-              <a href="#" class="btn-link products-section__item-link">Read more</a>
+              <div class="products-section__item-link">
+                <a href="#" class="btn-link products-section__item-link">Read more</a>
+              </div>
             </div>
           </div>
         </div>
@@ -136,19 +147,19 @@
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-4">
             <div class="benefits-section__item benefits-section__item-1">
               <h3>Worldwide delivery</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates suscipit at in asperiores. Minima quas quam, omnis rerum voluptate enim quos, ab optio magnam provident sed cupiditate nulla, cum pariatur?</p>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-4">
             <div class="benefits-section__item benefits-section__item-2">
               <h3>Fast delivery</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repudiandae consectetur necessitatibus nisi architecto, nulla in similique blanditiis natus amet omnis nostrum quam ea, neque placeat sit enim deserunt modi!</p>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-4">
             <div class="benefits-section__item benefits-section__item-3">
               <h3>Cargo cleaning expertise</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum recusandae repellendus iure nesciunt nisi voluptates sed, quod, neque non, rem consequuntur qui a praesentium corporis illum. Rem impedit, eveniet optio.</p>
@@ -168,12 +179,12 @@
           </div>
         </div>
         <div class="row align-items-center">
-          <div class="col-lg-5">
+          <div class="col-lg-6 col-xxl-5">
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quaerat ab ipsa fuga esse similique sunt eius et consequuntur illum voluptate fugit totam quidem accusamus, voluptates aliquam rem facilis quisquam!</p>
             <p>Quo, enim numquam repudiandae aliquid libero deleniti minima soluta aperiam minus beatae esse adipisci cupiditate voluptatibus natus mollitia illum delectus vitae fugiat error omnis non odit ipsam, excepturi reiciendis. Doloremque.</p>
             <p>Voluptas maiores nemo non, illo dignissimos, quo, dicta cupiditate commodi culpa quis harum quibusdam dolor quisquam placeat laudantium iure porro quasi voluptates excepturi laborum similique vel labore. Placeat, nisi, officiis!</p>
           </div>
-          <div class="col-lg-6 offset-lg-1">
+          <div class="col-lg-6 col-xxl-6 offset-xxl-1">
             <p><b>Look our systems in action:</b></p>
             <div class="ratio ratio-16x9">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/0mDyi0a2uZk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -193,17 +204,17 @@
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="mb-5 md-md-0 col-md-4">
             <div class="contacts-section__item contacts-section__address">
               Von-Liebig-Straße 2, 27721 Ritterhude
             </div>
           </div>
-          <div class="col">
+          <div class="mb-5 md-md-0 col-md-4">
             <div class="contacts-section__item contacts-section__tel">
               (+49) 421 – 334 68 61
             </div>
           </div>
-          <div class="col">
+          <div class="mb-5 md-md-0 col-md-4">
             <div class="contacts-section__item contacts-section__mail">
               mail @ marichem.de
             </div>
@@ -213,9 +224,7 @@
     </section>
     <!-- End Contacts Section -->
     
-    
-    
-    <footer class="footer dark-section">
+    <footer class="page-footer dark-section">
       <div class="container-fluid">
         <div class="row">
           <div class="col text-center">
@@ -230,6 +239,8 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+    <script src="js.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

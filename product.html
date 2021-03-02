@@ -22,33 +22,38 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="img/logo.png" alt="logo">
+          <img class="img-fluid" src="img/logo.png" alt="logo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler navbar__burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="visually-hidden">Menu</span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Worldwide coverage</a>
+              <a class="nav-link" href="#">Benefits</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacts</a>
             </li>
           </ul>
         </div>
-        <form class="d-flex">
-          <input class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-search" type="submit">
+        <div class="search">
+          <button class="btn search__btn search__btn_toggle">
             <span class="visually-hidden">Search</span>
           </button>
-        </form>
+          <form action="#" class="d-flex align-items-center">
+            <input class="form-control me-2 search__input" type="search">		
+            <button class="btn search__btn search__btn_search" type="submit">
+              <span class="visually-hidden">Search</span>
+            </button>
+          </form>
+        </div>
       </div>
     </nav>
     <!-- End Navbar -->
@@ -216,7 +221,7 @@
     </section>
     <!-- End Contacts Section -->
     
-    <footer class="footer dark-section">
+    <footer class="page-footer dark-section">
       <div class="container-fluid">
         <div class="row">
           <div class="col text-center">
@@ -231,6 +236,8 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+    <script src="js.js"></script>
     
     <script>
       let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
