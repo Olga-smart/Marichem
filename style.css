@@ -5,9 +5,13 @@
   --accent: #42b758;
   --accent-light: #e2f1ce;
 }
+html {
+  min-height: 100%;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   position: relative;
+  min-height: 100%;
 }
 .page-section {
   padding-top: 4rem;
@@ -905,3 +909,26 @@ body {
   list-style-type: circle;
 }
 /* End How to Order */
+
+/* Category Page */
+.category-page__header {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.category-page__header .lead {
+  color: rgba(255,255,255,0.5);
+  margin-top: 2rem;
+}
+.card_small {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.card_small img {
+  margin-bottom: 2rem;
+  width: 50%;
+}
+/* End Category Page */
