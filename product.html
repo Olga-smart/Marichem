@@ -18,6 +18,24 @@
     <title>Marichem</title>
   </head>
   <body>
+    <!-- Video Modal -->
+    <div class="modal fade video-modal" id="videoModal">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-body">
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+             <span class="visually-hidden">Close</span>
+           </button>
+            <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Video Modal -->
+   
+   
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -87,7 +105,7 @@
             <div class="order-1 order-md-2 col-md-6 col-lg-6 d-flex justify-content-center">
               <div class="product-card__img-wrap">
                 <img class="product-card__img" src="img/product.png">
-                <button class="product-card__icon-btn product-card__video-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Look in action">
+                <button class="product-card__icon-btn product-card__video-btn" data-bs-toggle="modal" data-bs-target="#videoModal" data-src="https://www.youtube.com/embed/0mDyi0a2uZk" title="Look in action">
                   <span class="visually-hidden">Play video</span>
                   <img src="img/play-button-arrowhead.svg">
                 </button>

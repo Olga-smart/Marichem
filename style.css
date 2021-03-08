@@ -893,6 +893,53 @@ body {
 }
 /* End Media Product Card */
 
+/* Video Modal */
+.video-modal .modal-body {
+  position: relative;
+  padding: 0;
+}
+.video-modal .btn-close {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  z-index: 999;
+  width: 1rem;
+  height: 1rem;
+  opacity: 1;
+  background: none;
+}
+.video-modal .btn-close::before,
+.video-modal .btn-close::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+.video-modal .btn-close::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.video-modal .btn-close::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* End Video Modal */
+
+/* Media Video Modal */
+@media(max-width: 575px) {
+  .video-modal .btn-close {
+    top: -30px;
+    right: 0;
+  }
+}
+/* End Media Video Modal */
+
 /* How to Order */
 .how-to-order {
   background-color: var(--primary);
