@@ -989,3 +989,23 @@ body {
   width: 50%;
 }
 /* End Category Page */
+
+/* Pagination */
+.pagination {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.pagination .page-numbers {
+  padding: 0.5rem 1rem;
+  color: var(--primary);
+  text-decoration: none;
+  border: 1px solid transparent;
+  font-weight: 500;
+}
+.pagination .page-numbers.current {
+  border: 1px solid var(--primary);
+}
+.pagination .page-numbers:not(.current):not(.dots):hover {
+  border: 1px solid rgba(0,0,0,0.2);
+}
+/* End Pagination */
