@@ -3,7 +3,7 @@
   --primary: #01203d;
   --primary-dark: #011c35;
   --accent: #42b758;
-  --accent-light: #e2f1ce;
+  --accent-dark: #3ca54f;
 }
 html {
   min-height: 100%;
@@ -12,6 +12,12 @@ body {
   font-family: 'Montserrat', sans-serif;
   position: relative;
   min-height: 100%;
+}
+a {
+  color: var(--accent);
+}
+a:hover {
+  color: var(--accent-dark);
 }
 .page-section {
   padding-top: 4rem;
